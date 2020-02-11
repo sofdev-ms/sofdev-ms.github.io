@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Test</title>
+  <style>
+    body {
+      top: 35%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-color: #eee8;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 3px;
+      cursor: pointer;
+      backface-visibility: hidden;
+      transition: all 0.2s;
+    }
+
+
+    p {
+      font-size: 20px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    h1:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+  </style>
+<body>
+  <h1>Hello People !!!!</h1>
+  <p>Notification testings</p>
+  <script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.crossOrigin = 'anonymous';
+        s.src='https://cdn.pushcrew.com/js/46acd8dbd719a6490d97e2774c2daac9.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+  </script>
+</body>
+</html>
